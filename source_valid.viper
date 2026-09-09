@@ -83,7 +83,7 @@ strike(marks < 50 || failed) {
 # NESTED BLOCK
 # =========================================================
 
-nest {
+nest() {
 
     fang internalMarks = 45;
     fang finalMarks = 40;
@@ -101,6 +101,12 @@ nest {
 # =========================================================
 # LOOP / CONTROL KEYWORDS
 # =========================================================
+
+strike(turn > 0) {
+
+    turn -= 1;
+
+}
 
 shift(age < 25) {
 
